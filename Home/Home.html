@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zodiac Sign</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Zodiac.html">Zodiac Signs</a></li>
+		</ul>
+	</nav>
+	<script>
+var month, day;
+
+month = parseInt(prompt("PLEASE ENTER YOUR BIRTH MONTH (1-12): "));
+day = parseInt(prompt("PLEASE ENTER YOUR BIRTH DAY (1-31): "));
+
+if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: AQUARIUS</h1> <br> ");
+}
+else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: PISCES</h1>");
+}
+else if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: ARIES</h1>");
+}
+else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: TAURUS</h1>");
+}
+else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: GEMINI</h1>");
+}
+else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: CANCER</h1>");
+}
+else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: LEO</h1>");
+}
+else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: VIRGO</h1>");
+}
+else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: LIBRA</h1>");
+}
+else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: SCORPIO</h1>");
+}
+else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: SAGITTARIUS</h1>");
+}
+else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+  document.write("<h1 style='text-align:center'>YOUR ZODIAC SIGN IS: CAPRICORN</h1>");
+}
+else {
+  document.write("<h1 style='text-align:center'>--INVALID--</h1>");
+}
+
+document.write("<br><button onclick='location.reload()'>Would you like to start over?</button>");
+	</script>
+</body>
+</html>
